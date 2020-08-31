@@ -1,0 +1,66 @@
+body {
+  background-color: #f3f3f3;
+  font-family: "Roboto", sans-serif;
+}
+.card {
+  margin: 0 auto;
+  margin-top: 5%;
+  padding: 10px 50px;
+  width: 600px;
+  height: 500px;
+  border-radius: 35px;
+  background-image: linear-gradient(60deg, #96deda 0%, #50c9c3 100%);
+  box-shadow: 2px 3px 14px rgba(0, 0, 0, 0.2);
+}
+div.placeholder {
+  width: 20px;
+}
+button {
+  display: inline;
+  position: relative;
+  left: 350px;
+  bottom: 35px;
+}
+#location {
+  text-align: left;
+  font-weight: normal;
+  font-size: 20px;
+  font-family: "Roboto", sans-serif;
+  position: relative;
+  bottom: 20px;
+}
+div.time-date {
+  position: relative;
+  bottom: 25px;
+}
+#temperature {
+  display: block;
+  text-align: center;
+  font-weight: 159;
+  font-size: 43px;
+  line-height: 30px;
+  font-family: "Roboto", sans-serif;
+  position: relative;
+  right: 15px;
+  bottom: 15px;
+}
+#weather {
+  font-size: 17px;
+  text-transform: uppercase;
+}
+#week,
+#degrees {
+  font-size: 20px;
+  font-weight: bold;
+}
+#emoji {
+  font-size: 25px;
+}
+#wind-speed {
+  position: relative;
+  left: 12px;
+}
+#date,
+#time {
+  text-transform: uppercase;
+}

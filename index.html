@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous" />
+    <script src="https://kit.fontawesome.com/9e6d717aa7.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="card">
+        <div class="card-body">
+            <div class="location-input">
+                <input type="text" class="form-control" id="location_search" placeholder="Enter your location"
+                    style="width: 300px" />
+                <button class="btn btn-outline-info" id="search" onclick="getWeather()">
+                    Search
+                </button>
+            </div>
+            <h1 id="location"><i class="fas fa-city"></i> City</h1>
+            <div class="time-date">
+                <span class="date-data" id="date">SUNDAY </span>
+                <span id="time">TEST</span>
+            </div>
+            <div class="Temp" id="temperature">
+                <span><i class="fas fa-thermometer-half"></i> Temperature</span>
+            </div>
+            </br>
+            <div class="container" id="weather">
+                <div class="row">
+                    <div class="cond col-4" id="condition"><i class="fas fa-cloud-sun"></i>
+                        Condition
+                    </div>
+                    <div class="hum col-4" id="humidity"><i class="fas fa-tint"></i>
+                        Humidity
+                    </div>
+                    <div class="wind col-4" id="wind-speed"><i class="fas fa-wind"></i>
+                        Windspeed
+                    </div>
+                    </br>
+                    </br>
+                    </br>
+                    <div class="container">
+                        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4" id="week">
+                            <div class="col">Mon</div>
+                            <div class="col">Tues</div>
+                            <div class="col">Wed</div>
+                            <div class="col">Thur</div>
+                        </div>
+                        </br>
+                    </div>
+                    <div class="container">
+                        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4" id="emoji">
+                            <div class="col"><i class="fas fa-cloud-sun"></i></i></div>
+                            <div class="col"><i class="fas fa-cloud-sun-rain"></i></div>
+                            <div class="col"><i class="far fa-sun"></i></div>
+                            <div class="col"><i class="fas fa-cloud-sun-rain"></i></div>
+                        </div>
+                    </div>
+                    </br>
+                    </br>
+                    <div class="container">
+                        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4" id="degrees">
+                            <div class="col">80℉</div>
+                            <div class="col">78℉</div>
+                            <div class="col">79℉</div>
+                            <div class="col">82℉</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript" src="script.js"></script>
+</body>
+</html>
+
