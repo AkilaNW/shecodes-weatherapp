@@ -1,26 +1,55 @@
-body {
-  background-color: #f3f3f3;
-  font-family: "Roboto", sans-serif;
+#form-input {
+  margin-top: 18px;
 }
-.card {
+#icon {
+  position: relative;
+  bottom: 3px;
+}
+#current {
+  font-size: 60px;
+  font-weight: 400;
+  line-height: 1;
+  font-family: inherit;
+}
+
+#units {
+  font-size: 20px;
+  position: relative;
+  top: -25px;
+  font-family: inherit;
+}
+
+img {
+  width: 60px;
+  height: 54px;
+}
+body {
+  font-family: "Roboto";
+}
+
+.weather-app {
   margin: 0 auto;
   margin-top: 5%;
   padding: 10px 50px;
   width: 600px;
-  height: 500px;
+  height: 555px;
   border-radius: 35px;
-  background-image: linear-gradient(60deg, #96deda 0%, #50c9c3 100%);
+  background-image: linear-gradient(to top, #fddb92 0%, #82e2e7 100%);
   box-shadow: 2px 3px 14px rgba(0, 0, 0, 0.2);
+  margin-bottom: 10px;
 }
+
 div.placeholder {
   width: 20px;
 }
+
 button {
   display: inline;
   position: relative;
   left: 350px;
   bottom: 35px;
 }
+
 #location {
   text-align: left;
   font-weight: normal;
@@ -29,10 +58,7 @@ button {
   position: relative;
   bottom: 20px;
 }
-div.time-date {
-  position: relative;
-  bottom: 25px;
-}
+
 #temperature {
   display: block;
   text-align: center;
@@ -43,27 +69,85 @@ div.time-date {
   position: relative;
   right: 15px;
   bottom: 15px;
+  margin-bottom: 0;
+  padding: 5px;
 }
+
 #weather {
   font-size: 17px;
-  text-transform: uppercase;
+  text-transform: capitalize;
+  margin-top: 5px;
 }
-#week,
-#degrees {
-  font-size: 20px;
-  font-weight: bold;
+#real-feel {
+  font-size: 15px;
+  line-height: 15px;
+  font-weight: normal;
+  text-align: center;
+  position: relative;
+  bottom: 27px;
+  right: 3px;
+  margin-bottom: 0;
+  font-family: inherit;
 }
-#emoji {
-  font-size: 25px;
+
+h3 {
+  position: relative;
+  right: 3px;
+  top: 10px;
+  margin-bottom: 0;
 }
+
+.weekly-forecast h3 {
+  font-size: 16px;
+  font-weight: 400;
+  text-align: center;
+  height: 16px;
+  line-height: 15px;
+  padding-top: 7px;
+  text-transform: capitalize;
+}
+div.weekly-temp {
+  position: relative;
+  top: 8px;
+}
+
 #wind-speed {
   position: relative;
   left: 12px;
 }
-#date,
-#time {
-  text-transform: uppercase;
+
+div.time-date {
+  position: relative;
+  bottom: 25px;
 }
+
+#update {
+  font-size: 18px;
+  font-family: "Roboto", sans-serif;
+}
+
 footer {
   text-align: center;
+}
+
+#date {
+  text-transform: capitalize;
+}
+#condition {
+  text-transform: capitalize;
+}
+#city {
+  position: relative;
+  bottom: 25px;
+  font-size: 25px;
+  font-weight: light;
+  font-family: "Roboto", sans-serif;
+}
+.weather-temp .active {
+  color: rgb(33, 33, 33);
+  cursor: default;
+}
+
+.weather-temp .active:hover {
+  text-decoration: none;
 }
